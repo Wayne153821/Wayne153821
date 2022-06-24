@@ -1,0 +1,19 @@
+<!--pages/manage/manage.wxml-->
+
+<input class="input" bindinput="getAddTitle" type="text" placeholder="请输入要添加的标题"/>
+<input class="input" bindinput="getAddAuthor" type="text" placeholder="请输入要添加的作者"/>
+<input class="input" bindinput="getAddContent" type="text" placeholder="请输入要添加的内容"/>
+<input class="input" bindinput="getAddHits" type="text" placeholder="请输入要添加的阅读量"/>
+<input class="input" bindinput="getAddImage" type="text" placeholder="请输入要添加的图片地址"/>
+<input class="input" bindinput="getAddVideo" type="text" placeholder="请输入要添加的视频地址"/>
+<button class="btn" bindtap="add" size="mini">添加乡村特色文化文章</button>
+<view class="text">选择并根据标题来修改文章</view>
+<input class="input" bindinput="getUpdateTitle" type="text" placeholder="请输入要修改的标题"/>
+<input class="input" bindinput="getUpdateAuthor" type="text" placeholder="请输入修改后的作者"/>
+<input class="input" bindinput="getUpdateContent" type="text" placeholder="请输入修改后的内容"/>
+<input class="input" bindinput="getUpdateHits" type="text" placeholder="请输入修改后的阅读量"/>
+<input class="input" bindinput="getUpdateImage" type="text" placeholder="请输入修改后的图片地址"/>
+<input class="input" bindinput="getUpdateVideo" type="text" placeholder="请输入修改后的视频地址"/>
+<button class="btn" bindtap="update" size="mini">修改乡村特色文化文章</button>
+<input class="input" bindinput="getDeleteTitle" type="text" placeholder="请输入要删除的标题"/>
+<button class="btn" bindtap="delete" size="mini">删除乡村特色文化文章</button>

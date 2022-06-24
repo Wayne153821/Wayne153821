@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "van-search": "@vant/weapp/search/index",
+        "van-divider": "@vant/weapp/divider/index",
+        "van-grid": "@vant/weapp/grid/index",
+        "van-grid-item": "@vant/weapp/grid-item/index",
+        "van-notice-bar": "@vant/weapp/notice-bar/index",
+        "van-tabbar": "@vant/weapp/tabbar/index",
+        "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+        "van-card": "@vant/weapp/card/index"
+    }
+}

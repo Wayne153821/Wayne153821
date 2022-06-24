@@ -1,0 +1,34 @@
+.all{
+    background-image: url('https://tse2-mm.cn.bing.net/th/id/OIP-C.rNy5jLGrbmnt1Bovb4vHHgHaKz?pid=ImgDet&rs=1');
+    height: 1183rpx;
+}
+
+
+.title{
+    font-size: 50rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input{
+    border: 3rpx solid #0ff;
+    margin: 15rpx;
+}
+
+.btn{
+    background: #0ff;
+    width: 200rpx;
+}

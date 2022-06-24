@@ -1,0 +1,39 @@
+/* pages/lawData/lawData.wxss */
+.all{
+    padding-left: 20rpx;
+    padding-right: 10rpx;
+}
+
+.title{
+    height: 70rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.sub{
+    padding-bottom: 10rpx;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 25rpx;
+}
+
+.sub .time{
+    color: gray;
+}
+
+.sub .xianfa{
+    margin-left: 20rpx;
+    color: #0ff;
+}
+
+.text{
+    font-size: 35rpx;
+}
+
+.hits {
+    color: gray;
+    font-size: 25rpx;
+    padding-bottom: 20rpx;
+}

@@ -1,0 +1,10 @@
+<view  wx:if="{{shoucang[index].select}}"
+class="row"  wx:for="{{shoucang}}" wx:key="index">
+    <view bindtap="clickRow" data-id="{{item._id}}" data-idx="{{index}}" class="text">
+        <image class="pic" src="{{item.image}}"></image>
+        <view class="title">
+            <view>{{item.title}}</view>
+        </view>
+    </view>
+    <image class="shoucang" data-id="{{item._id}}" data-idx="{{index}}" bindtap="shoucang" src="../images/shoucang-h.png"></image>
+</view> 

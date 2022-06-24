@@ -1,0 +1,14 @@
+
+.banner{ width:100%; height: 300rpx; }
+.banner swiper{ height: 100%; width:100%;}
+.banner image{ width: 100%; height: 300rpx;}
+
+.icon{ width: 60rpx;height: 60rpx;}
+
+.map{display: flex;flex-wrap: nowrap; align-items: center;justify-content: center;}
+.btn{background: #0ff;}
+
+.row{display: flex; flex-wrap: nowrap; height: 200rpx;align-items: center; border-bottom: #0ff solid 3rpx;}
+.title{width: 500rpx;}
+.hits{font-size: 25rpx;margin-top: 10rpx;}
+.pic{height: 150rpx; width: 200rpx;margin-top: 25rpx;}

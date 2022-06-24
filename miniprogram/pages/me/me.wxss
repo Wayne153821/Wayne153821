@@ -1,0 +1,18 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    height: 80rpx;
+    border: 3rpx solid #0ff;
+    align-items: center;
+    margin: 15rpx;
+}
+
+.touxiang {
+    width: 75rpx;
+    height: 75rpx;
+    border-radius: 50%;
+}
+
+.btn{
+    background: #0ff;
+}

@@ -1,0 +1,25 @@
+<view class="item">
+    用户名：
+    <input bindinput="getNickName" wx:if="{{!information.nickName}}" value="{{nickName}}" type="text"/>
+    <input bindinput="getNickName" wx:else value="{{information.nickName}}" type="text"/>
+</view>
+
+<view class="item" bindtap="getTouxiang">
+    头像：<image class="touxiang" wx:if="{{!information.image}}" src="{{image}}"></image>
+    <image class="touxiang" wx:else src="{{information.image}}"></image>
+</view>
+
+<view class="item">
+    <picker mode="selector" range="{{selectorItems}}" bindchange="selectorChange">性别：{{information.selector}}</picker>
+</view>
+
+<picker class="item" mode="date" header-text="选择时间" value="{{information.date}}" bindchange="selectDate">
+    <text>出生日期：</text>
+    <text>{{information.date}}</text>
+</picker>
+
+<view class="item">
+    电话号码：<input bindinput="getPhone" value="{{information.phone}}" type="text"/>
+</view>
+
+<button class="btn" bindtap="save">保存</button>

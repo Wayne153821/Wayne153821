@@ -1,0 +1,9 @@
+<view class="all">
+    <view class="title">{{dataList.title}}</view>
+    <view class="sub">
+    <view class="time">{{dataList.time}}</view>
+    <view class="xianfa">{{dataList.type}}</view>
+    </view>
+    <text class="text">{{dataList.content}}</text>
+    <view class="hits">阅读量：{{dataList.hits}}</view>
+</view>

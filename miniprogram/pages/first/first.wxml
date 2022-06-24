@@ -1,0 +1,65 @@
+<!-- 搜索框 -->
+<van-search
+    value="{{ value }}"
+    placeholder="请输入搜索的标题"
+    use-action-slot
+    bind:change="onChange"
+    bind:search="onSearch"
+>
+  <view slot="action" bind:tap="onClick">搜索并查看</view>
+</van-search>
+
+<view class="banner">
+  <swiper indicator-dots indicator-color="#fff" indicator-active-color="#00f" circular autoplay interval="5000">
+    <swiper-item><image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Ftravel.anhuinews.com%2Flyzixun%2F202108%2FW020210814471104261184.png&refer=http%3A%2F%2Ftravel.anhuinews.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657723433&t=d23c9fac13ac9804b0e77400ac6a1d63"/></swiper-item>
+    <swiper-item><image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg7.51tietu.net%2Fpic%2F2019-082405%2Fcbax2cgxzjtcbax2cgxzjt.jpg&refer=http%3A%2F%2Fimg7.51tietu.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657723433&t=e26c3b1d848f61b57d69d64dfb047763"/></swiper-item>
+    <swiper-item><image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fphoto.tuchong.com%2F1721111%2Ff%2F946216557.jpg&refer=http%3A%2F%2Fphoto.tuchong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657724085&t=cfb8fa8fdb451b15be2bf47c08afd2c4"/></swiper-item>
+  </swiper>
+</view>
+
+<!-- 分割线 -->
+<van-divider contentPosition="center">乡村特色</van-divider>
+<!-- 宫格 -->
+<van-grid>
+    <van-grid-item icon="/pages/images/fengche.png" text="风车" />
+    <van-grid-item icon="/pages/images/jingpinlvyou.png" text="精品旅游" />
+    <van-grid-item icon="/pages/images/xiangtuwenxue.png" text="乡土文学" />
+    <van-grid-item icon="/pages/images/chengxiangdibao.png" text="城乡低保" />
+</van-grid>
+<van-grid>
+    <van-grid-item icon="/pages/images/nongzuowu.png" text="农作物" />
+    <van-grid-item icon="/pages/images/zhiwu.png" text="植物" />
+    <van-grid-item icon="/pages/images/nongju.png" text="农具" />
+    <van-grid-item icon="/pages/images/peifei.png" text="配肥" />
+</van-grid>
+
+<van-divider contentPosition="center">乡村地图工具</van-divider>
+<view class="map">
+    <button bindtap="route" class="btn" size="mini">路线规划</button>
+    <button bindtap="point" class="btn" size="mini">地图选点</button>
+    <button bindtap="subway" class="btn" size="mini">地铁服务</button>
+</view>
+
+
+<!-- 乡村文化标语 -->
+<van-divider contentPosition="center">乡村文化宣传标语</van-divider>
+
+<!-- 通知栏 -->
+<!-- 文字较短时，通过设置 scrollable 属性开启滚动播放 -->
+<van-notice-bar scrollable
+  text="传播乡村文化精神，弘扬吃苦耐劳文化传统，享受乡村美好风景！"
+  speed="100"
+  left-icon="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png"
+/>
+
+<van-divider contentPosition="center">乡村特色文化宣传</van-divider>
+
+<view bindtap="clickRow"
+data-id="{{item._id}}" data-idx="{{index}}" 
+class="row"  wx:for="{{dataList}}" wx:key="index">
+    <image class="pic" src="{{item.image}}"></image>
+    <view class="title">
+        <view>{{item.title}}</view>
+        <view class="hits">阅读量：{{item.hits}}</view>
+    </view>
+</view> 

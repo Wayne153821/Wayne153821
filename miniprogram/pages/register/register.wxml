@@ -1,0 +1,17 @@
+<view class="all">
+<view class="title">管理员注册</view>
+<view class="row">
+    <view class="text">用户名：</view>
+    <input type="input" bindinput="getUserName" class="input"/>
+</view>
+<view class="row">
+    <view  class="text">用户账号：</view>
+    <input type="input" bindinput="getUserId" class="input"/>
+</view>
+<view class="row">
+    <view  class="text">密码：</view>
+    <input type="input" bindinput="getUserPassword" class="input"/>
+</view>
+
+<button class="btn" bindtap="register">注册</button>
+</view>

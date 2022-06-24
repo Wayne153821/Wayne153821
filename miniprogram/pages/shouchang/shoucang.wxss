@@ -1,0 +1,7 @@
+/* pages/shouchang/shoucang.wxss */
+.row{display: flex; flex-wrap: nowrap; height: 200rpx;align-items: center; border-bottom: #0ff solid 3rpx;}
+.text{display: flex; flex-wrap: nowrap; height: 200rpx; align-items: center; }
+.title{width: 500rpx;}
+.hits{font-size: 25rpx;margin-top: 10rpx;}
+.pic{height: 150rpx; width: 200rpx;margin-top: 25rpx;}
+.shoucang{height: 80rpx; width: 80rpx;position: absolute; right: 15px;}

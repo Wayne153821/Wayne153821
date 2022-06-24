@@ -1,0 +1,20 @@
+<view class="all">
+    <image class="pic" src="{{dataList[0].image}}"></image>
+    <view class="title">{{dataList[0].title}}</view>
+    <view class="author">作者：{{dataList[0].author}}</view>
+    <text class="content">{{dataList[0].content}}</text>
+    <view class='videoView' wx:if="{{dataList[0].video}}">
+        <view class="video">相关视频：</view>
+        <video id="myVideo" src="{{dataList[0].video}}"
+        binderror="videoErrorCallback" enable-danmu="{{true}}" loop="{{true}}" controls="{{true}}"></video>
+    </view>
+    <view class="end">
+        <view>阅读量：{{dataList[0].hits}}</view>
+        <view class="text">收藏：</view>
+        <image class="shoucang" bindtap="shoucang"  wx:if="{{!shoucang[index].select}}" src="../images/shoucang.png"></image>
+        <image class="shoucang" bindtap="shoucang"  wx:else src="../images/shoucang-h.png"></image>
+    </view>
+</view>
+
+
+

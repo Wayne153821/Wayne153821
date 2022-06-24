@@ -1,0 +1,40 @@
+.scroll_type{
+    white-space: nowrap;
+    width: 100%;
+    height: 50rpx;
+    padding:15rpx;
+    border: #0ff solid 3rpx;
+    font-size: 40rpx;
+}
+
+.type{
+    display: inline-block;
+    height: 50rpx;
+    margin-right: 20rpx;
+}
+
+.title{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200rpx;
+    border: #0ff solid 3rpx;
+}
+
+.title .text{
+    font-size: 33rpx;
+    margin-top: 50rpx;
+    margin-right: 300rpx;
+}
+
+.hits{
+    margin-top: 20rpx;
+    font-size: 25rpx;
+}
+
+.title .image{
+    position: absolute;
+    right: 0rpx;
+    width: 280rpx;
+    height: 200rpx;
+}

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/first/first",
+    "pages/data/data",
+    "pages/law/law",
+    "pages/lawData/lawData",
+    "pages/shouchang/shoucang",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/manage/manage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0ff",
+    "navigationBarTitleText": "乡村特色内容传播工具",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+      "color": "#000",
+      "backgroundColor": "#0ff",
+      "list": [
+        {
+            "pagePath": "pages/first/first",
+            "text": "首页",
+            "iconPath": "pages/images/first.png",
+            "selectedIconPath": "pages/images/first-h.png"
+        },
+        {
+            "pagePath": "pages/law/law",
+            "text": "普法学习",
+            "iconPath": "pages/images/law.png",
+            "selectedIconPath": "pages/images/law-h.png"
+        },
+        {
+          "pagePath": "pages/index/index",
+          "text": "我的",
+          "iconPath": "pages/images/user.png",
+          "selectedIconPath": "pages/images/user-h.png"
+      }      
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+      "scope.userLocation": {
+          "desc": "你的位置将用于小程序定位"
+      }
+  },
+  "plugins": {
+      "routePlan":{
+        "version": "1.0.19",
+        "provider": "wx50b5593e81dd937a"
+      },
+      "chooseLocation": {
+        "version": "1.0.9",
+        "provider": "wx76a9a06e5b4e693e"
+      },
+      "subway": {
+        "version": "1.0.13",
+        "provider": "wx6aaf93c4435fa1c1"
+      }
+  }
+}

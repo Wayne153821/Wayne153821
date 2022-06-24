@@ -1,0 +1,45 @@
+<view class="head">
+    <button class="login_btn" wx:if="{{!userInfo}}" bindtap="login">授权登录/注册</button>
+    <view wx:else class="user">
+        <view  bindtap="setPhotoInfo">
+        <image wx:if="{{imgUrl!=null}}" class="touxiang" src="{{imgUrl}}" background-size="cover"></image>
+        <image wx:else class="touxiang" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <text>{{userInfo.nickName}}{{userInfo.name}}</text>
+        <view class="end">
+            <text class="login_out" bindtap="loginOut">退出登录</text>
+            <text class="clear" bindtap="clearAll">清除缓存</text>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{userInfo}}">
+    <view class="item" bindtap="shoucang">
+        <text>我的收藏</text>
+        <view class="right_arrow"></view>
+    </view>
+    <view class="item"  wx:if="{{imgUrl==null}}" bindtap="information">
+        <text>我的资料</text>
+        <view class="right_arrow"></view>
+    </view>
+</view>
+<view class="item">
+    <button class="button" open-type="feedback">反馈建议</button>
+    <view class="right_arrow"></view>
+</view>
+<view class="item">
+    <button class="button" open-type="contact">在线客服</button>
+    <view class="right_arrow"></view>
+</view>
+<view class="item" bindtap="toLogin" wx:if="{{imgUrl==null}}">
+        <text>管理员登录</text>
+        <view class="right_arrow"></view>
+</view>
+<view class="item" wx:if="{{imgUrl!=null}}" bindtap="toManage">
+    <button class="button">后端管理</button>
+    <view class="right_arrow"></view>
+</view>
+<view class="item" wx:if="{{imgUrl==null}}" bindtap="toRegister">
+        <text>加入我们</text>
+        <view class="right_arrow"></view>
+</view>

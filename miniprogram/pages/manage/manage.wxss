@@ -1,0 +1,17 @@
+/* pages/manage/manage.wxss */
+.input{
+    margin: 15rpx;
+    border: #0ff solid 3rpx;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rpx;
+}
+
+.btn{
+    margin-top: 15rpx;
+    background: #0ff;
+}

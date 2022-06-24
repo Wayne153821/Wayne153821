@@ -1,0 +1,12 @@
+<view class="all">
+<view class="title">管理员登录</view>
+<view class="row">
+    <view class="text">账号：</view>
+    <input class="input" bindinput="getUserId" type="text"/>
+</view>
+<view class="row">
+    <view class="text">密码：</view>
+    <input class="input" bindinput="getUserPassword" type="text"/>
+</view>
+<button class="btn" bindtap="login">登录</button>
+</view>

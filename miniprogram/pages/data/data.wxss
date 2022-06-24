@@ -1,0 +1,8 @@
+.all{margin: 15rpx;}
+.pic{width: 720rpx;}
+.title{display: flex; justify-content: center; font-size: 40rpx;font-weight: bold;}
+.author{ font-size: 25rpx;font-weight: bold;display: flex; justify-content: flex-end; color: #0ff;}
+.video{margin-bottom: 20rpx;color: #0ff;}
+.end{display: flex;flex-wrap: nowrap;height: 100rpx;align-items: center;color: #0ff;}
+.text{ position: absolute; right: 55px;}
+.shoucang{height: 80rpx; width: 80rpx;position: absolute; right: 15px;}

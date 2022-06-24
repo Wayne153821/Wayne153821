@@ -1,0 +1,19 @@
+<scroll-view scroll-x="true" class="scroll_type">
+    <view class="type" bindtap="getLaw">全部</view>
+    <view class="type" bindtap="getXianfa">宪法</view>
+    <view class="type" bindtap="getMin">民法典</view>
+    <view class="type" bindtap="getGong">公共文化服务保障法</view>
+    <view class="type" bindtap="getLvyou">旅游法</view>
+    <view class="type" bindtap="getFeiwu">非物质文化遗产法</view>
+    <view class="type" bindtap="getWenwu">文物保护法</view>
+</scroll-view>
+
+<view bindtap="clickRow"
+data-id="{{item._id}}" data-idx="{{index}}"
+class="title" wx:for="{{dataList}}" wx:key="index">
+<view class="text">
+    <view>{{dataList[index].title}}</view>
+    <view class="hits">{{dataList[index].hits}}阅读</view>
+</view>
+    <image class="image" src="{{dataList[index].image}}"></image>
+</view>
